@@ -85,7 +85,7 @@ public:
 			}
 		}
 		Fruit();
-		Move();
+		GameLogic();
 	}
 
 	void Refresher() {
@@ -123,7 +123,7 @@ public:
 		return 0;
 	}
 
-	void GG() {
+	void EndGame() {
 		system("cls");
 		Sleep(1000);
 		cout << "Game Over :(" << endl;
@@ -131,11 +131,8 @@ public:
 		cout << "You earned " << points << " points" << endl;
 	}
 
-	void cls() {
-		system("cls");
-	}
-
-	void Move() {
+	
+	void GameLogic() {
 
 		while (isRunning == true) {
 
@@ -170,7 +167,7 @@ public:
 			tailX[tail - 1] = prevPositionX;
 			tailY[tail - 1] = prevPositionY;
 			if (CheckBorders()) {
-				GG();	
+				EndGame();	
 				isRunning = false;
 				break;
 			}
@@ -186,7 +183,7 @@ public:
 			Sleep(delay);
 			
 
-			cls();
+			system("cls");
 			Refresher();
 		}
 	}
