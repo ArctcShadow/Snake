@@ -12,17 +12,7 @@ class Snake {
 
 public:
 
-	void TestFunc() {
-		for (int i = 0; i <= 5; i++)
-			tailX.push_back(i);
-
-		cout << endl;
-
-		tailX.insert(tailX.begin(), 100);
-		for (int i = 0; i < tailX.size(); i++) {
-			cout << tailX[i] << " ";
-		}
-	}
+	
 
 	Snake() {
 
