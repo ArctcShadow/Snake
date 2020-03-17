@@ -4,7 +4,13 @@ Game created by using C++
 
 # How to play?
 use "wasd" to move
+
+
+
 w - up
+
 a- left
+
 s - dowm
+
 d - right
