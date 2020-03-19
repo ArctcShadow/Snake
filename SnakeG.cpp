@@ -4,7 +4,7 @@
 #include <windows.h>
 #include <vector>
 #include <conio.h>
-#include "Snake.h"
+#include "Logic.h"
 
 using namespace std;
 
@@ -14,8 +14,7 @@ using namespace std;
 
 int main()
 {
-	Snake s;
-	s.Begin();
-
+	Logic l;
+	l.Begin();
 
 }
